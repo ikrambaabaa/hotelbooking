@@ -1,0 +1,293 @@
+:root{
+    --color-primary:rgb(216, 73, 73);
+    --color-secondary:rgb(0, 0, 0);
+    --color-text:rgb(180, 48, 48);
+/*fonts*/
+    --font-primary:'Open Sans',Helvetica,Arial,sans-serif;
+    --font-size-text:13px;
+    --font-size-tile:20px;
+    --font-size-section-title:40px;
+--md:768px;
+
+
+
+    /*size*/
+    --size-primary:25px;
+    --margin-primary:var(--size-primary);
+    --pading-primar:var(--size-primary);
+    --height-primary:120px;
+    
+
+}
+.navbar{
+    height: var(--height-primary);
+   
+}
+.navbar-nav .nav-item {
+    padding: 40px;
+}
+
+.navbar-nav .nav-item :hover{
+    background-color: indianred;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto; /* Adjust the navbar height for smaller screens */
+    }
+}
+    .hero{
+        background: url(../images/bg-img-1.jpg) no-repeat center /cover ;
+    height: 515px;
+display: flex;
+align-items: center;
+justify-content: center;}
+.search-form{
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+.search-form{
+    flex: 1 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-form .form-grp {
+    flex: 1 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Add this CSS rule to make .full-width take up 100% width */
+.full-width {
+    display: flex;
+    flex: 100%;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+}
+.form-grp {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.form-grp i {
+    margin-right: 20px; /* Adjust the margin-right for spacing */
+    color: brown;
+    font-size: var(--font-size-tile);
+    position: relative; /* Use relative positioning */
+    left: 10px; /* Adjust the left position for spacing */
+}
+
+.form-control {
+    padding-left: 40px; /* Adjust the padding as needed */
+    width: 100%; /* Take up 100% width */
+    font-size: var(--font-size-text); /* Use the defined font size */
+    border: none; /* Remove the border if needed */
+    border-bottom: 1px solid #000; /* Add a bottom border */
+}
+
+.btn-medium {
+    width: 25%; /* Allow the button to adjust its width based on content */
+    font-size: 18px; /* Set the font size to medium */
+    padding: 10px 20px; /* Adjust the padding for medium size */
+    text-align: center;
+    background-color: brown;
+    color: white;
+    border-radius:5px  ;
+    cursor: pointer; /* Add a cursor pointer for better interaction */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.need-help{
+    background-color: white;
+    font-size: small;
+    padding: 5px;
+    
+}
+.container {
+    padding-top: 50px; /* Adjust the top padding as needed */
+    padding-bottom: 50px; /* Adjust the bottom padding as needed */
+  }
+  .section {
+    background-color: #b83b3b; /* Replace with your desired background color */
+    padding-top: 20px; /* Adjust the top padding as needed */
+    padding-bottom: 20px; /* Adjust the bottom padding as needed */
+  }
+  .title {
+    font-size:50px;
+    color: darksalmon;
+     font-style: oblique;
+     font-weight: 200;
+     font-family:Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+    font-size: 30px; /* Adjust the font size as needed */
+    color: #050505;
+    font-style: oblique; /* Text color */
+}
+
+.btn.btn-white {
+    background-color: white; /* Button background color */
+    color: #333; /* Button text color */
+    font-size: 18px; /* Button font size */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Button border radius */
+    text-decoration: none; /* Remove underlines from the link */
+    display: inline-block; /* Make the link a block element */
+}
+.btn.btn-white:hover
+{background-color: black;}
+.article{text-align: center;
+margin-top: 10px;
+color: #b83b3b;
+padding: 15px;
+transition: all .5s ease-in;}
+.article:hover{
+    scale: 1.1;
+    box-shadow: 0 0 10px 0 black;
+}
+.article .article-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.btn.btn-primary {
+    background-color:#b83b3b; /* Change to your desired text color */
+    /* You can also add other styling properties here */
+}
+.grey{
+    background-color:lightgrey;
+}
+
+.level-slid img{
+    width: 100%;
+}
+.item-container{
+    padding: 25px;
+}
+.item-container h3{
+    font-size: var(--font-size-tile);
+    color: var(--color-text);
+}
+.item-container p{
+    font-size: var(--font-size-text);
+    color: black;
+}
+.slider-item{
+    margin-right: 10px ;
+    background-color: aliceblue;
+}
+.body a{
+color: inherit;
+text-decoration: none;
+display: flex;
+justify-content: flex-start;
+gap:5px;
+margin-bottom: 10px;
+margin-top: 5px;
+background-color:lightgray;
+}
+.header{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 5px;
+}
+.body{
+    margin-top: 5px;
+}
+.header h4{
+    font-size: var(--font-size-tile);
+     padding-top: 5px;
+}
+.body a:hover{
+    background-color: #b83b3b;
+}
+
+.video-overlay {
+    position: absolute;
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 515px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-control-play,
+.video-control-pause {
+    color: white;
+    font-size: var(--font-size-section-title);
+    cursor: pointer;
+}
+
+.video-control-pause {
+    display: none;
+}
+
+
+.video-container {
+    overflow: hidden;
+    width: 100%;
+    height: 515px;
+    position: relative;
+}
+
+.video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container{
+    max-width: 600px;
+}
+.contact-form{
+    width: 500px;
+    margin: auto;
+}
+.contact-form{
+    background-color: rgb(167, 146, 146);
+    border: none;
+    margin-bottom: 5px;
+}
+.form-grp i{top:  5px;
+
+}
+/* Style for the footer */
+footer {
+    background-color: #141414; /* Background color for the footer */
+    padding-top: 5px;
+    padding-bottom: 0%; /* Add some padding to top and bottom for spacing */
+    text-align: center; /* Center-align the text within the footer */
+  }
+  
+  /* Style for the copyright text */
+  footer p {
+    font-size: 14px; /* Adjust the font size */
+    color: #f1f1f1; /* Text color */
+bottom: 0; /* Remove default margin */
+  }
+  
+  /* Style for the designer's name link */
+  footer a {
+    text-decoration: none; /* Remove underlines from the link */
+    color: #007bff; /* Link color */
+  }
+  
+  /* Style for the designer's name link on hover */
+  footer a:hover {
+    color: #b83b3b; /* Underline the link on hover */
+  }
+  
